@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import {BiEdit} from "react-icons/bi"
+import {MdDeleteOutline} from "react-icons/md"
+
 const Table = () => {
   const [data, setData] = useState([])
   const getData = async () => {
@@ -31,7 +34,7 @@ const Table = () => {
               <td>{v.name}</td>
               <td>{v.email}</td>
               <td>{v.role}</td>
-              <td></td>
+              <td><BiEdit/><MdDeleteOutline/></td>
             </tr>)
           })}
         </tbody>
