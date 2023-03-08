@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import {BiEdit} from "react-icons/bi"
-import {MdDeleteOutline} from "react-icons/md"
+import { BiEdit } from "react-icons/bi"
+import { MdDeleteOutline } from "react-icons/md"
+import Pagination from './Pagination';
 
 const Table = () => {
   const [data, setData] = useState([])
@@ -34,11 +35,12 @@ const Table = () => {
               <td>{v.name}</td>
               <td>{v.email}</td>
               <td>{v.role}</td>
-              <td><BiEdit/><MdDeleteOutline/></td>
+              <td><BiEdit /><MdDeleteOutline /></td>
             </tr>)
           })}
         </tbody>
       </table>
+      <Pagination />
     </div>
   )
 }

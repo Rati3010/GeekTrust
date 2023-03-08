@@ -2,7 +2,10 @@ import React from 'react'
 
 const Pagination = () => {
   return (
-    <div>Pagination</div>
+    <div>
+      <button>Delete Selected</button>
+      <></>
+    </div>
   )
 }
 
