@@ -1,0 +1,4 @@
+export const GET_MEMBERS = "GET_MEMBERS";
+export const DELETE_SELECTED = "DELETE_SELECTED";
+export const EDIT_MEMBER = "EDIT_MEMBER";
+export const SEARCH_QUERY = "SEARCH_QUERY";
